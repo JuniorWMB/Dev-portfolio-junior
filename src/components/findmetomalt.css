@@ -1,0 +1,30 @@
+.findme__contain {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  align-items: center;
+}
+
+.findme__contain h3 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.4em;
+}
+.findme__contain p {
+  font-size: 1.3em;
+  font-family: "Lato", sans-serif;
+  width: 600px;
+  height: 100px;
+}
+.findme__block {
+  background: #3ae374;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 60%;
+}
+.btn__malt button {
+  width: 150px;
+  height: 60px;
+  margin-bottom: 30px;
+}
