@@ -53,11 +53,12 @@ const PortfolioProject = () => {
                 <p>{proj.undertitle}</p>
                 <p>{proj.description}</p>
               </div>
-
               <div className="portfolio__seemyproject">
-                <a href={proj.site} target="_blank" rel="noopener noreferrer">
-                  <button>Voir le projet</button>
-                </a>
+                <button>
+                  <a href={proj.site} target="_blank" rel="noopener noreferrer">
+                    Voir le projet{" "}
+                  </a>
+                </button>
                 <button>Voir le github</button>
               </div>
             </div>
