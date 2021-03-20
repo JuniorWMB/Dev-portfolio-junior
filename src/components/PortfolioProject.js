@@ -7,18 +7,19 @@ const PortfolioProject = () => {
   const [projet, setProjet] = useState([])
 
   const data = useStaticQuery(graphql`
-    query MyFQuery {
-      allStrapiProjet {
+    query MyQuery {
+      allStrapiWork {
         nodes {
-          created_at
-          features
+          description
           id
-          stack
+          created_at(fromNow: false)
+          strapiId
           title
-          picture {
+          undertitle
+          tala {
             childImageSharp {
-              fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid_noBase64
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -26,8 +27,6 @@ const PortfolioProject = () => {
       }
     }
   `)
-
-  console.log("data projet", data)
 
   return (
     <div className="portfolio__contain">
@@ -40,23 +39,26 @@ const PortfolioProject = () => {
         </p>
       </div>
       <div className="portfolio__projectview ">
-        {data.allStrapiProjet.nodes.map(proj => (
+        {data.allStrapiWork.nodes.map(proj => (
           <div className="portfolioblock">
             <div className="portfolio__img">
               <Img
-                fluid={proj.picture.childImageSharp.fluid}
+                fluid={proj.tala.childImageSharp.fluid}
                 className="picture__gatsby"
               />
             </div>
             <div className="portfolio__textblock">
               <h3>{proj.title}</h3>
               <div className="portfolio__button">
-                <button>{proj.stack}</button>
-                <button>{proj.features}</button>
+                <p>{proj.undertitle}</p>
+                <p>{proj.description}</p>
               </div>
 
               <div className="portfolio__seemyproject">
-                <button>Voir le projet</button>
+                <a href={proj.site} target="_blank" rel="noopener noreferrer">
+                  <button>Voir le projet</button>
+                </a>
+                <button>Voir le github</button>
               </div>
             </div>
           </div>

@@ -12,24 +12,3 @@ const portfolio = () => {
 }
 
 export default portfolio
-
-export const pageQuery = graphql`
-  query MyFirstQuery {
-    allStrapiProjet {
-      nodes {
-        created_at
-        features
-        id
-        stack
-        title
-        picture {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-          }
-        }
-      }
-    }
-  }
-`

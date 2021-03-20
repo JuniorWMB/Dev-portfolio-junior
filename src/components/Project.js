@@ -8,14 +8,7 @@ import "./project.css"
 const Project = () => {
   const data = useStaticQuery(graphql`
     query {
-      moi: file(relativePath: { eq: "moi.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      iguane: file(relativePath: { eq: "gatsby-icon.png" }) {
+      iguane: file(relativePath: { eq: "iguane.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_noBase64
@@ -24,7 +17,7 @@ const Project = () => {
       }
     }
   `)
-  console.log("iguane", data)
+
   return (
     <div className="project__contain">
       <div className="project__containleft">
@@ -37,7 +30,7 @@ const Project = () => {
         <div className="project__containpicture">
           <Img
             className="text__picturebis"
-            fluid={data.moi.childImageSharp.fluid}
+            fluid={data.iguane.childImageSharp.fluid}
           />
         </div>
       </div>

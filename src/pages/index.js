@@ -22,13 +22,6 @@ export const query = graphql`
         }
       }
     }
-    iguane: file(relativePath: { eq: "iguane.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
   }
 `
 
