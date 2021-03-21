@@ -1,1 +1,3 @@
-
+[submodule "Dev-portfolio-junior"]
+	path = Dev-portfolio-junior
+	url = https://github.com/JuniorWMB/Dev-Portfolio-Junior
