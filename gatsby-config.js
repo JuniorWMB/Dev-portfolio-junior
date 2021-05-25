@@ -8,14 +8,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 10000,
-        contentTypes: [`work`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     queryLimit: 10000,
+    //     contentTypes: [`work`],
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
