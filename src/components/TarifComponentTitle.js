@@ -15,15 +15,19 @@ const TarifComponentTitle = () => {
         </p>
       </div>
       <div className="tarif__call">
-        <h3>Besoin d’une solution web clé en main ?</h3>
-        <p>
-          Obtenez un devis rapidement pour estimer les coûts de programmation.
-          Réservez votre rendez vous téléphonique en ligne en seulement quelques
-          clics
-        </p>
-        <Link to="/contact/" className="portfolio__btnlink">
-          <button>PROGRAMMER UN CALL</button>
-        </Link>
+        <div className="leftneed">
+          <h3>Besoin d’une solution web clé en main ?</h3>
+          <p>
+            Obtenez un devis rapidement pour estimer les coûts de programmation.
+            Réservez votre rendez vous téléphonique en ligne en seulement
+            quelques clics
+          </p>
+        </div>
+        <div className="rightneed">
+          <Link to="/contact/" className="portfolio__btnlink">
+            <button>PROGRAMMER UN CALL</button>
+          </Link>
+        </div>
       </div>
       <Forfait />
     </div>
