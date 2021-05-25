@@ -38,6 +38,8 @@ const PortfolioProject = () => {
           mon travail.
         </p>
       </div>
+
+      <h1>ici strapi</h1>
       {/* <div className="portfolio__projectview ">
         {data.allStrapiWork.nodes.map(proj => (
           <div className="portfolioblock">
