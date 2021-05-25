@@ -6,27 +6,27 @@ import { graphql, useStaticQuery } from "gatsby"
 const PortfolioProject = () => {
   const [projet, setProjet] = useState([])
 
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      allStrapiWork {
-        nodes {
-          description
-          id
-          created_at(fromNow: false)
-          strapiId
-          title
-          undertitle
-          tala {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query MyQuery {
+  //     allStrapiWork {
+  //       nodes {
+  //         description
+  //         id
+  //         created_at(fromNow: false)
+  //         strapiId
+  //         title
+  //         undertitle
+  //         tala {
+  //           childImageSharp {
+  //             fluid(maxWidth: 800) {
+  //               ...GatsbyImageSharpFluid
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <div className="portfolio__contain">
@@ -38,7 +38,7 @@ const PortfolioProject = () => {
           mon travail.
         </p>
       </div>
-      <div className="portfolio__projectview ">
+      {/* <div className="portfolio__projectview ">
         {data.allStrapiWork.nodes.map(proj => (
           <div className="portfolioblock">
             <div className="portfolio__img">
@@ -64,7 +64,7 @@ const PortfolioProject = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
