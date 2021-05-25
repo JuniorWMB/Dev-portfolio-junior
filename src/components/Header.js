@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { GrLinkedin } from "react-icons/gr"
 import { GrGithub } from "react-icons/gr"
+import { FcHome } from "react-icons/fc"
 
 import "./header.css"
 
@@ -17,7 +18,7 @@ const Header = () => {
         </div>
         <ul className="headernav__right">
           <Link to="/" className="Link">
-            Home
+            <FcHome />
           </Link>
           <Link to="/portfolio/" className="Link">
             Portfolio
