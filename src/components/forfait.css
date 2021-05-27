@@ -36,55 +36,31 @@
     background: #3ae374;
     height: 25vh;
   }
-  /* 
-  
-  
-  
-  
- 
   .forfait__multiforfait {
     width: 90%;
     height: 800px;
     display: flex;
-    justify-content: center;
-  }
-  
-  .forfait__textvitrine {
-    width: 90vw;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .forfait__textcommerce {
-    width: 90vw;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
   }
-  .linkbis {
-    margin-top: 35px;
-  }
-  
-  .forfait__vitrine {
-    height: 100%;
-    display: flex;
-  }
-  
   .forfait__priceblock {
     border: 1px solid #3ae374;
-    height: 89%;
-    margin-right: 10px;
+    height: auto;
+    width: 100%;
+    margin: 0 10px 30px 0;
   }
-  
+  .forfait__textvitrine p {
+    margin: 1rem 0;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+  }
+  .hiddenresponsive {
+    display: none;
+  }
   .forfait__vitrineprice {
     padding: 35px;
   }
-  
+
   .forfait__vitrineprice h3 {
     font-family: "Abril Fatface", cursive;
     font-size: 1.8em;
@@ -94,7 +70,7 @@
     font-size: 1.3em;
     font-family: "Lato", sans-serif;
   }
-  
+
   .price__forfait {
     display: flex;
     align-items: center;
@@ -109,17 +85,15 @@
     font-family: "Lato", sans-serif;
     margin: 0 5px;
   }
-  
   .include {
     padding: 35px;
   }
-  
+
   .include p {
     font-size: 1.2em;
     font-family: "Lato", sans-serif;
     line-height: 35px;
   }
-  
   .forfait__vitrinebutton {
     height: 100px;
     display: flex;
@@ -130,37 +104,6 @@
     height: 80%;
     width: 50%;
   }
-  .center {
-    display: flex;
-    align-items: center;
-  }
-  .last {
-    padding: 35px 15px;
-  }
-  .trait {
-    display: flex;
-    justify-content: center;
-  }
-  .trait div {
-    width: 350px;
-    height: 2px;
-  }
-  
-  
-  .center__vitrine {
-    display: flex;
-    width: 100%;
-  }
-  
-  .center__vitrinetwo {
-    display: flex;
-    width: 45vw;
-  
-  }
-  .center__vitrinethree {
-    width: 45vw;
-  }
-  
   .link {
     text-decoration: none;
     cursor: default;
@@ -175,26 +118,147 @@
     height: 100%;
     display: none;
   }
-  
+
   .vitrinebis {
     margin-top: 40px;
-  } */
+  }
+
+  .resp__price {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   body {
     max-width: 768px;
     box-sizing: border-box;
   }
+  .forfait__blockchoice {
+    border: 1px #3ae374 solid;
+    width: 90%;
+    height: 25vh;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forfait__contain {
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .forfait__blockchoice div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .forfait__blockchoice div:hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .forfait__color {
+    background: #3ae374;
+    height: 25vh;
+  }
+  .forfait__multiforfait {
+    width: 90%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+  .forfait__priceblock {
+    border: 1px solid #3ae374;
+    height: auto;
+    width: 100%;
+    margin: 0 10px 30px 0;
+  }
+  .forfait__textvitrine p {
+    margin: 1rem 0;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+  }
+  .hiddenresponsive {
+    display: none;
+  }
+  .forfait__vitrineprice {
+    padding: 35px;
+  }
+
+  .forfait__vitrineprice h3 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 1.8em;
+    color: #3ae374;
+  }
+  .forfait__vitrineprice p {
+    font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+  }
+
+  .price__forfait {
+    display: flex;
+    align-items: center;
+  }
+  .price__forfait h4 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2.3em;
+    color: #000000;
+  }
+  .price__forfait span {
+    font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+    margin: 0 5px;
+  }
+  .include {
+    padding: 35px;
+  }
+
+  .include p {
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    line-height: 35px;
+  }
+  .forfait__vitrinebutton {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forfait__vitrinebutton button {
+    height: 80%;
+    width: 50%;
+  }
+  .link {
+    text-decoration: none;
+    cursor: default;
+  }
+  .linkvtwo {
+    cursor: pointer;
+  }
+  .contenu {
+    background: white;
+    padding: 20px;
+    width: 97%;
+    height: 100%;
+    display: none;
+  }
+
+  .vitrinebis {
+    margin-top: 40px;
+  }
+
+  .resp__price {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     max-width: 992px;
-    box-sizing: border-box;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1880px) {
-  body {
-    max-width: 1880px;
     box-sizing: border-box;
   }
   .forfait__blockchoice {
@@ -300,6 +364,187 @@
 
   .include {
     padding: 35px;
+  }
+
+  .include p {
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    line-height: 35px;
+  }
+
+  .forfait__vitrinebutton {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forfait__vitrinebutton button {
+    height: 80%;
+    width: 50%;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+  }
+  .last {
+    padding: 35px 15px;
+  }
+  .trait {
+    display: flex;
+    justify-content: center;
+  }
+  .trait div {
+    width: 350px;
+    height: 2px;
+  }
+  .forfait__color {
+    background: #3ae374;
+  }
+
+  .center__vitrine {
+    display: flex;
+    width: 100%;
+  }
+
+  .center__vitrinetwo {
+    display: flex;
+    width: 45vw;
+
+    /* margin-left: 30px; */
+  }
+  .center__vitrinethree {
+    width: 45vw;
+  }
+
+  .link {
+    text-decoration: none;
+    cursor: default;
+  }
+  .linkvtwo {
+    cursor: pointer;
+  }
+  .contenu {
+    background: white;
+    padding: 20px;
+    width: 97%;
+    height: 100%;
+    display: none;
+  }
+
+  .vitrinebis {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1880px) {
+  body {
+    max-width: 1880px;
+    box-sizing: border-box;
+  }
+  .forfait__blockchoice {
+    border: 1px #3ae374 solid;
+    width: 80vw;
+    height: 25vh;
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .forfait__blockchoice div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .forfait__blockchoice div:hover {
+    /* background: #3ae374; */
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .forfait__contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .forfait__multiforfait {
+    width: 90%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .forfait__textvitrine {
+    width: 90vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .forfait__textcommerce {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .linkbis {
+    margin-top: 35px;
+  }
+
+  .forfait__vitrine {
+    height: auto;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .forfait__priceblock {
+    border: 1px solid #3ae374;
+    height: 100vh;
+    margin-right: 10px;
+  }
+
+  .forfait__vitrineprice {
+    /* border-bottom: 1px solid #3ae374; */
+    padding: 35px;
+  }
+
+  .forfait__vitrineprice h3 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 1.8em;
+    color: #3ae374;
+  }
+  .forfait__vitrineprice p {
+    font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+  }
+
+  .price__forfait {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .price__forfait h4 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2.3em;
+    color: #000000;
+  }
+  .price__forfait span {
+    font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+    margin: 0 5px;
+  }
+
+  .include {
+    padding: 1rem;
   }
 
   .include p {

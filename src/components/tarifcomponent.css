@@ -163,6 +163,7 @@
   .portfolio__btnlink button {
     width: 100%;
     /* height: 100%; */
+    height: 50px;
     cursor: pointer;
   }
   .portfolio__btnlink {

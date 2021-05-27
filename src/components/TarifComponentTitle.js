@@ -20,7 +20,7 @@ const TarifComponentTitle = () => {
           <p>
             Obtenez un devis rapidement pour estimer les coûts de programmation.
             Réservez votre rendez vous téléphonique en ligne en seulement
-            quelques clics
+            quelques clics.
           </p>
         </div>
         <div className="rightneed">

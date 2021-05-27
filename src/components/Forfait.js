@@ -38,9 +38,9 @@ const Forfait = () => {
       <div className="forfait__multiforfait">
         <div className={toggleTabs === 1 ? "forfait__vitrineblock" : "contenu"}>
           <div className="forfait__textvitrine">
-            <FcRight size={40} />
+            <FcRight size={40} className="hiddenresponsive" />
             <p>Forfaits, création de site web vitrine, clé en main</p>
-            <FcLeft size={40} />
+            <FcLeft size={40} className="hiddenresponsive" />
           </div>
           <div className="forfait__vitrine">
             <div className="forfait__priceblock">
@@ -218,14 +218,14 @@ const Forfait = () => {
         </div>
         <div className={toggleTabs === 2 ? "forfait__textcommerce" : "contenu"}>
           <div className="forfait__textvitrine vitrinebis">
-            <FcRight size={40} />
+            <FcRight size={40} className="hiddenresponsive" />
             <p>Forfaits, création de site web E-commerce, clé en main</p>
-            <FcLeft size={40} />
+            <FcLeft size={40} className="hiddenresponsive" />
           </div>
           <div className="forfait__vitrineblock"></div>
           <div className="forfait__multiforfait center__vitrine">
             <div className="forfait__vitrine center__vitrinetwo">
-              <div className="forfait__priceblock">
+              <div className="forfait__priceblock resp__price">
                 <div className="forfait__vitrineprice">
                   <h3>Web store essentiel</h3>
                   <div className="price__forfait">
@@ -283,7 +283,7 @@ const Forfait = () => {
             </div>
             {/* block two*/}
             <div className="forfait__vitrine center__vitrinethree">
-              <div className="forfait__priceblock">
+              <div className="forfait__priceblock resp__price">
                 <div className="forfait__vitrineprice ">
                   <h3>Web store professionnel</h3>
                   <div className="price__forfait">

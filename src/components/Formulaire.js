@@ -3,7 +3,7 @@ import "./formulaire.css"
 
 const Formulaire = () => {
   return (
-    <div className="formulaire__contain">
+    <div className="formulaire__contain formulaire__master">
       <div className="formulaire__text">
         <span> Contacte-moi</span>
         <h3 style={{ textAlign: "center" }}>
@@ -21,7 +21,7 @@ const Formulaire = () => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot field"
-          className="formulaire__contain"
+          className="formulaire__contain contain__form__respon"
         >
           <div className="form__blockone">
             <div className="form__input">

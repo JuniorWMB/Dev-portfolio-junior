@@ -111,8 +111,10 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-contact-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/contact.js */ "./src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
-  "component---src-pages-portfolio-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/portfolio.js */ "./src/pages/portfolio.js")))
+  "component---src-pages-portfolio-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/portfolio.js */ "./src/pages/portfolio.js"))),
+  "component---src-pages-tarifs-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/tarifs.js */ "./src/pages/tarifs.js")))
   }
 
 
@@ -40135,6 +40137,343 @@ const FindMeToMalt = () => {
 
 /***/ }),
 
+/***/ "./src/components/Forfait.js":
+/*!***********************************!*\
+  !*** ./src/components/Forfait.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_fc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fc */ "./node_modules/react-icons/fc/index.esm.js");
+/* harmony import */ var _forfait_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./forfait.css */ "./src/components/forfait.css");
+/* harmony import */ var _forfait_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_forfait_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+
+
+
+
+const Forfait = () => {
+  //   const [toggleTabs, setToggleTabs] = useState(1)
+  // const [viewVitrine, setViewVitrine] = useState(true)
+  const {
+    0: toggleTabs,
+    1: setToggleTabs
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(1);
+
+  const toggleTab = index => {
+    setToggleTabs(index);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__contain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__blockchoice"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: toggleTabs === 1 ? "forfait__color" : "none__color",
+    onClick: () => toggleTab(1)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcFrame"], {
+    size: 50
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Site Vitrine")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: toggleTabs === 2 ? "forfait__color" : "none__color",
+    onClick: () => toggleTab(2)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcShop"], {
+    size: 50
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Site E-Commerce"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__multiforfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: toggleTabs === 1 ? "forfait__vitrineblock" : "contenu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__textvitrine"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcRight"], {
+    size: 40,
+    className: "hiddenresponsive"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Forfaits, cr\xE9ation de site web vitrine, cl\xE9 en main"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcLeft"], {
+    size: 40,
+    className: "hiddenresponsive"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrine"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__priceblock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineprice"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Landing page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "price__forfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "550"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "/ht")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Page unique au trafic cibl\xE9. Ici, on va droit au but et on se focalise sur la g\xE9n\xE9ration du business.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "include"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Inclus dans ce forfait:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Charte graphique sur mesure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "D\xE9veloppement sur mesure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Cr\xE9ation, int\xE9gration de visuels"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation full responsive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Formulaire de contact intelligent"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Optimisation du r\xE9f\xE9rencement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Statistiques des visites et du trafic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en ligne, coaching, suivi sur 3 mois")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+    to: "/contact/",
+    className: "forfait__vitrinebutton link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "linkvtwo"
+  }, "Commencer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineblock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__priceblock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineprice"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Site vitrine essentiel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "price__forfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "999"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "/ht")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "On va \xE0 l\u2019essentiel en s\u2019appuyant sur un outil de gestion de contenu et un graphisme emballant et agr\xE9able.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "include"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Inclus dans ce forfait:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation graphique"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en place du contenu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Interface d'administration standard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation full responsive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Formulaire de contact personnalis\xE9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Optimisation du r\xE9f\xE9rencement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Statistiques des visites et du trafic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en ligne, coaching, formation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+    to: "/contact/",
+    className: "forfait__vitrinebutton link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "linkvtwo"
+  }, "Commencer")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineblock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__priceblock"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineprice last"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Site vitrine professionnel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "price__forfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "1500"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "/ht")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Design & d\xE9veloppement enti\xE8rement personnalis\xE9 cr\xE9e en utilisant les derni\xE8res technologies .")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "include"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Inclus dans ce forfait:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Charte graphique sur mesure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en place du contenu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Interface d'administration pro"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation full responsive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Formulaire de contact intelligent"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Optimisation du r\xE9f\xE9rencement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Statistiques des visites et du trafic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en ligne, coaching, formation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrinedescription"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+    to: "/contact/",
+    className: "forfait__vitrinebutton link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "linkvtwo"
+  }, "Commencer")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: toggleTabs === 2 ? "forfait__textcommerce" : "contenu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__textvitrine vitrinebis"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcRight"], {
+    size: 40,
+    className: "hiddenresponsive"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Forfaits, cr\xE9ation de site web E-commerce, cl\xE9 en main"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcLeft"], {
+    size: 40,
+    className: "hiddenresponsive"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineblock"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__multiforfait center__vitrine"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrine center__vitrinetwo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__priceblock resp__price"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineprice"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Web store essentiel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "price__forfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "2990"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "/ht")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "On va \xE0 l\u2019essentiel en s\u2019appuyant sur un outil de gestion de contenu et un graphisme existant.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "include"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Inclus dans ce forfait:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation graphique"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en place du contenu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Interface d'administration standard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation full responsive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Formulaire de contact intelligent"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Optimisation du r\xE9f\xE9rencement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Statistiques des visites et du trafic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en ligne, coaching, suivit 6/m")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+    to: "/contact/",
+    className: "forfait__vitrinebutton link"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "linkvtwo"
+  }, "Commencer")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrine center__vitrinethree"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__priceblock resp__price"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "forfait__vitrineprice "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Web store professionnel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "price__forfait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, "3990"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "/ht")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "On va plus loin avec une \xE9tude approfondie et la cr\xE9ation d\u2019une identit\xE9 professionnelle.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trait"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "include"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Inclus dans ce forfait:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Charte graphique / logo sur mesure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en place du contenu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Interface d'administration optimis\xE9e"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Adaptation full responsive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Formulaire de contact intelligent"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Optimisation du r\xE9f\xE9rencement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Statistiques des visites et du trafic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcCheckmark"], null), "Mise en ligne, coaching, suivit 6/m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+    to: "/contact/",
+    className: "forfait__vitrinebutton link linkbis"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "linkvtwo"
+  }, "Commencer")))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Forfait);
+
+/***/ }),
+
+/***/ "./src/components/Formulaire.js":
+/*!**************************************!*\
+  !*** ./src/components/Formulaire.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _formulaire_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./formulaire.css */ "./src/components/formulaire.css");
+/* harmony import */ var _formulaire_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_formulaire_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const Formulaire = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "formulaire__contain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "formulaire__text"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Contacte-moi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      textAlign: "center"
+    }
+  }, "Brise le plafond de verre et Lance-toi dans l\u2019aventure et donne un nouvel \xE9lan \xE0 ton entreprise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Envie de me pr\xE9senter un projet, ou tout simplement dire bonjour ?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
+    className: "form__main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "",
+    name: "mailchimp",
+    method: "POST",
+    "data-netlify": "true",
+    "data-netlify-honeypot": "bot field",
+    className: "formulaire__contain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blockone"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "pr\xE9nom"
+  }, "Pr\xE9nom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Indique ton pr\xE9nom"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "pr\xE9nom"
+  }, "Sujet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Que puis-je faire pour toi ? "
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blocktwo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "email"
+  }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Sur quel adresse mail dois-je te r\xE9pondre ? "
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "form-name",
+    value: "mailchimp"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "bot-field"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blockthree"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "message"
+  }, "Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    name: "",
+    id: "",
+    cols: "60",
+    rows: "10",
+    placeholder: "Entre ton message "
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__checkbox"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "checkbox",
+    name: "",
+    id: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "J'accepte la politique de confidentialit\xE9.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "form__btn",
+    disabled: "disabled"
+  }, "Envoyer"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Formulaire);
+
+/***/ }),
+
 /***/ "./src/components/Header.js":
 /*!**********************************!*\
   !*** ./src/components/Header.js ***!
@@ -40485,6 +40824,47 @@ const Project = () => {
 
 /***/ }),
 
+/***/ "./src/components/TarifComponentTitle.js":
+/*!***********************************************!*\
+  !*** ./src/components/TarifComponentTitle.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Forfait__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Forfait */ "./src/components/Forfait.js");
+/* harmony import */ var _tarifcomponent_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tarifcomponent.css */ "./src/components/tarifcomponent.css");
+/* harmony import */ var _tarifcomponent_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_tarifcomponent_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+
+
+const TarifComponentTitle = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "portfolio__contain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "portfolio__text"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Tarifs des prestations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Une tarification simple et transparente"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Une tarification simple et transparente Optez pour un forfait projet complet ou un tarif journalier pour un d\xE9veloppement sp\xE9cifique")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tarif__call"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "leftneed"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Besoin d\u2019une solution web cl\xE9 en main ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obtenez un devis rapidement pour estimer les co\xFBts de programmation. R\xE9servez votre rendez vous t\xE9l\xE9phonique en ligne en seulement quelques clics.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rightneed"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "/contact/",
+    className: "portfolio__btnlink"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "PROGRAMMER UN CALL")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Forfait__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TarifComponentTitle);
+
+/***/ }),
+
 /***/ "./src/components/Tarification.js":
 /*!****************************************!*\
   !*** ./src/components/Tarification.js ***!
@@ -40673,6 +41053,28 @@ const TextNeedMe = () => {
 
 /***/ }),
 
+/***/ "./src/components/forfait.css":
+/*!************************************!*\
+  !*** ./src/components/forfait.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/formulaire.css":
+/*!***************************************!*\
+  !*** ./src/components/formulaire.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/components/header.css":
 /*!***********************************!*\
   !*** ./src/components/header.css ***!
@@ -40721,6 +41123,17 @@ const TextNeedMe = () => {
 /*!************************************!*\
   !*** ./src/components/project.css ***!
   \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/tarifcomponent.css":
+/*!*******************************************!*\
+  !*** ./src/components/tarifcomponent.css ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -40777,6 +41190,31 @@ __webpack_require__.r(__webpack_exports__);
 const NotFoundPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404: Not Found"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You just hit a route that doesn't exist... the sadness."));
 
 /* harmony default export */ __webpack_exports__["default"] = (NotFoundPage);
+
+/***/ }),
+
+/***/ "./src/pages/contact.js":
+/*!******************************!*\
+  !*** ./src/pages/contact.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Formulaire__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Formulaire */ "./src/components/Formulaire.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+
+
+
+
+const contact = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Formulaire__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (contact);
 
 /***/ }),
 
@@ -40845,6 +41283,33 @@ const portfolio = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (portfolio);
+
+/***/ }),
+
+/***/ "./src/pages/tarifs.js":
+/*!*****************************!*\
+  !*** ./src/pages/tarifs.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Forfait__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Forfait */ "./src/components/Forfait.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_TarifComponentTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/TarifComponentTitle */ "./src/components/TarifComponentTitle.js");
+
+
+
+
+
+const tarifs = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TarifComponentTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (tarifs);
 
 /***/ }),
 
