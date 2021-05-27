@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import "./portfolioproject.css"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import { PopupButton } from "react-calendly"
 
 const PortfolioProject = () => {
   const [projet, setProjet] = useState([])
@@ -40,6 +41,15 @@ const PortfolioProject = () => {
       </div>
 
       <h1>ici strapi</h1>
+      <PopupButton
+        color="#00a2ff"
+        text="Click Juniorr"
+        textColor="#ffffff"
+        data-url="https://calendly.com/junior-wembopa"
+        styles={{
+          height: "1000px",
+        }}
+      />
       {/* <div className="portfolio__projectview ">
         {data.allStrapiWork.nodes.map(proj => (
           <div className="portfolioblock">

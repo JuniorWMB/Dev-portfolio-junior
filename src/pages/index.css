@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 
-html,
+/* html,
 body {
   max-width: 1280px;
   display: flex;
@@ -144,4 +144,4 @@ body {
   width: 95%;
   margin: 30px auto 30px;
   padding: 15px;
-}
+} */

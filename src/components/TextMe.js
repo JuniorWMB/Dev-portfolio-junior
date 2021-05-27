@@ -3,7 +3,7 @@ import "./textme.css"
 
 const TextMe = () => {
   return (
-    <div>
+    <div className="text__master">
       <div className="text__containprincipal">
         <div className="text__contain">
           <div className="text">

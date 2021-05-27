@@ -10,11 +10,11 @@ const Contact = () => {
         <Link to="/contact/">
           <button>Book un call</button>
         </Link>
-        <PopupButton
+        {/* <PopupButton
           color="#00a2ff"
-          text="Click Junior"
+          text="Click Juniorr"
           textColor="#ffffff"
-          url="https://calendly.com/junior-wembopa/15min"
+          data-url="https://calendly.com/junior-wembopa/15min"
           utm={{
             utmCampaign: "Spring Sale 2019",
             utmContent: "Shoe and Shirts",
@@ -25,7 +25,7 @@ const Contact = () => {
           styles={{
             position: "relative",
           }}
-        />
+        /> */}
       </div>
     </>
   )
