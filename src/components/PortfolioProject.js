@@ -7,28 +7,28 @@ import { PopupButton } from "react-calendly"
 const PortfolioProject = () => {
   const [projet, setProjet] = useState([])
 
-   const data = useStaticQuery(graphql`
-     query MyQuery {
-       allStrapiWork {
-         nodes {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allStrapiWork {
+        nodes {
           description
-      github
-      id
-      createdAt
-      site
-      stack
-      strapiId
-      picture {
-        childImageSharp {
-          fluid(maxWidth:400){
-            ...GatsbyImageSharpFluid
+          github
+          id
+          createdAt
+          site
+          stack
+          strapiId
+          picture {
+            childImageSharp {
+              fluid(maxWidth: 200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
-        }      
-         }
-       }
-     }
-   `)
+      }
+    }
+  `)
 
   return (
     <div className="portfolio__contain">
