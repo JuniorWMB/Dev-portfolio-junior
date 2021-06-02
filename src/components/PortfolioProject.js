@@ -20,7 +20,7 @@ const PortfolioProject = () => {
           strapiId
           picture {
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 400) {
                 ...GatsbyImageSharpFluid
               }
             }
