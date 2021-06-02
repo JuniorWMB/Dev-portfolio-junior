@@ -7,27 +7,28 @@ import { PopupButton } from "react-calendly"
 const PortfolioProject = () => {
   const [projet, setProjet] = useState([])
 
-  // const data = useStaticQuery(graphql`
-  //   query MyQuery {
-  //     allStrapiWork {
-  //       nodes {
-  //         description
-  //         id
-  //         created_at(fromNow: false)
-  //         strapiId
-  //         title
-  //         undertitle
-  //         tala {
-  //           childImageSharp {
-  //             fluid(maxWidth: 800) {
-  //               ...GatsbyImageSharpFluid
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+   const data = useStaticQuery(graphql`
+     query MyQuery {
+       allStrapiWork {
+         nodes {
+          description
+      github
+      id
+      createdAt
+      site
+      stack
+      strapiId
+      picture {
+        childImageSharp {
+          fluid(maxWidth:400){
+            ...GatsbyImageSharpFluid
+          }
+        }
+        }      
+         }
+       }
+     }
+   `)
 
   return (
     <div className="portfolio__contain">
@@ -40,8 +41,7 @@ const PortfolioProject = () => {
         </p>
       </div>
 
-      <h1>ici strapi</h1>
-      <PopupButton
+      {/* <PopupButton
         color="#00a2ff"
         text="Click Juniorr"
         textColor="#ffffff"
@@ -49,34 +49,28 @@ const PortfolioProject = () => {
         styles={{
           height: "1000px",
         }}
-      />
-      {/* <div className="portfolio__projectview ">
+      /> */}
+      <div className="portfolio__projectview ">
         {data.allStrapiWork.nodes.map(proj => (
           <div className="portfolioblock">
             <div className="portfolio__img">
               <Img
-                fluid={proj.tala.childImageSharp.fluid}
+                fluid={proj.picture.childImageSharp.fluid}
                 className="picture__gatsby"
               />
             </div>
             <div className="portfolio__textblock">
-              <h3>{proj.title}</h3>
+              <h3>{proj.site}</h3>
               <div className="portfolio__button">
-                <p>{proj.undertitle}</p>
                 <p>{proj.description}</p>
               </div>
               <div className="portfolio__seemyproject">
-                <button>
-                  <a href={proj.site} target="_blank" rel="noopener noreferrer">
-                    Voir le projet{" "}
-                  </a>
-                </button>
                 <button>Voir le github</button>
               </div>
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }
