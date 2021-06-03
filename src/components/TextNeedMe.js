@@ -21,13 +21,13 @@ const TextNeedMe = () => {
   return (
     <div className="text__needme">
       <div className="text__needmeleft">
-        <p>Que pourrions-nous faire ensemble ?</p>
-        <h3>Besoin d'intégrer un développeur ?</h3>
+        <p>Comment pouvons-nous collaborer ensemble ?</p>
+        <h3>Besoin d’un développeur ?</h3>
         <p>
-          Je développe des projets web, quelles que soient leurs dimensions, de
-          la landing page à l’application web en passant par le SaaS, pour des
-          petites et moyennes entreprises. J’ai une aspiration certaine pour les
-          projets entrepreneuriaux innovants, et les méthodes agiles.
+          De la landing page à l’application web en passant par le SaaS, je crée
+          des projets web pour des entrepreneurs et entreprises de toutes
+          tailles. Découvrir vos projets passionnant et innovant c’est ce qui
+          m’inspire au quotidien.
         </p>
         <div className="text__needmelog">
           <div className="text__needmespeci">

@@ -23,8 +23,8 @@ const Mission = () => {
         </div>
         <h3>Full Remote / Présentiel</h3>
         <p>
-          Organisé à distance, on communique et on collabore ensemble. Pout tous
-          nos projets, on utilise les méthodes agiles
+          Organisé à distance, on communique et on collabore ensemble. Pour tous
+          nos projets, on utilise les méthodes agiles.
         </p>
       </div>
       <div className="mission__text textv2">
