@@ -60,9 +60,7 @@ const Formulaire = () => {
             <input type="checkbox" name="" id="" />
             <p>J'accepte la politique de confidentialité.</p>
           </div>
-          <button className="form__btn" disabled="disabled">
-            Envoyer
-          </button>
+          <button className="form__btn">Envoyer</button>
         </form>
       </main>
     </div>
