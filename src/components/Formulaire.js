@@ -17,7 +17,7 @@ const Formulaire = () => {
       <main className="form__main">
         <form
           action=""
-          name="mailchimp"
+          name="PortfolioContact"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot field"
