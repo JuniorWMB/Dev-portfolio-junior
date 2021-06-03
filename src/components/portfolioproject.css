@@ -391,9 +391,9 @@
     height: 30px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1880px) {
+@media screen and (min-width: 992px) and (max-width: 2880px) {
   body {
-    max-width: 1880px;
+    max-width: 2880px;
     box-sizing: border-box;
   }
 
