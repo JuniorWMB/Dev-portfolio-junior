@@ -2,6 +2,18 @@ import React from "react"
 import "./formulaire.css"
 
 const Formulaire = () => {
+  const [userName, setUserName] = useState("")
+  const [sujet, setSujet] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [disable, setdisable] = useState(false)
+
+  const buttondisable = () => {
+    if (userName && sujet && email && message === true) {
+      setdisable(true)
+    }
+  }
+
   return (
     <div className="formulaire__contain formulaire__master">
       <div className="formulaire__text">
@@ -16,23 +28,32 @@ const Formulaire = () => {
       </div>
       <main className="form__main">
         <form
-          action=""
+          action="/success"
           name="PortfolioContact"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot field"
           className="formulaire__contain contain__form__respon"
+          onSubmit="submit"
         >
           <div className="form__blockone">
             <div className="form__input">
               <label htmlFor="prénom">Prénom</label>
-              <input placeholder="Indique ton prénom" />
+              <input
+                placeholder="Indique ton prénom"
+                type="text"
+                name="prénom"
+                onChange={e => setUserName(e.target.value)}
+              />
             </div>
             <div className="form__input">
-              <label htmlFor="prénom">Sujet</label>
+              <label htmlFor="sujet">Sujet</label>
               <input
                 placeholder="Que puis-je faire pour toi ?
               "
+                type="text"
+                name="sujet"
+                onChange={e => setSujet(e.target.value)}
               />
             </div>
           </div>
@@ -41,8 +62,11 @@ const Formulaire = () => {
             <input
               placeholder="Sur quel adresse mail dois-je te répondre ?
               "
+              type="mail"
+              name="email"
+              onChange={e => setEmail(e.target.value)}
             />
-            <input type="hidden" name="form-name" value="mailchimp" />
+            <input type="hidden" name="form-name" value="PortfolioContact" />
             <input type="hidden" name="bot-field" />
           </div>
           <div className="form__blockthree">
@@ -54,13 +78,16 @@ const Formulaire = () => {
               rows="10"
               placeholder="Entre ton message
               "
+              onChange={e => setMessage(e.target.value)}
             ></textarea>
           </div>
           <div className="form__checkbox">
             <input type="checkbox" name="" id="" />
             <p>J'accepte la politique de confidentialité.</p>
           </div>
-          <button className="form__btn">Envoyer</button>
+          <button type="submit" className="form__btn" disabled={disable}>
+            Envoyer
+          </button>
         </form>
       </main>
     </div>
