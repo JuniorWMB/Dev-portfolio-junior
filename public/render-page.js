@@ -111,6 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-contact-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/contact.js */ "./src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
   }
 
@@ -5470,7 +5471,7 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 
-const strictUriEncode = __webpack_require__(/*! strict-uri-encode */ "./node_modules/strict-uri-encode/index.js");
+const strictUriEncode = __webpack_require__(/*! strict-uri-encode */ "./node_modules/query-string/node_modules/strict-uri-encode/index.js");
 const decodeComponent = __webpack_require__(/*! decode-uri-component */ "./node_modules/decode-uri-component/index.js");
 const splitOnFirst = __webpack_require__(/*! split-on-first */ "./node_modules/split-on-first/index.js");
 const filterObject = __webpack_require__(/*! filter-obj */ "./node_modules/filter-obj/index.js");
@@ -5873,6 +5874,20 @@ exports.exclude = (input, filter, options) => {
 
 	return exports.pick(input, exclusionFilter, options);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/query-string/node_modules/strict-uri-encode/index.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/query-string/node_modules/strict-uri-encode/index.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
 
 
 /***/ }),
@@ -40022,20 +40037,6 @@ module.exports = (string, separator) => {
 
 /***/ }),
 
-/***/ "./node_modules/strict-uri-encode/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/strict-uri-encode/index.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
-
-
-/***/ }),
-
 /***/ "./node_modules/webpack/buildin/amd-options.js":
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
@@ -40131,6 +40132,134 @@ const FindMeToMalt = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FindMeToMalt);
+
+/***/ }),
+
+/***/ "./src/components/Formulaire.js":
+/*!**************************************!*\
+  !*** ./src/components/Formulaire.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _formulaire_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./formulaire.css */ "./src/components/formulaire.css");
+/* harmony import */ var _formulaire_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_formulaire_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+const Formulaire = () => {
+  const {
+    0: userName,
+    1: setUserName
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: sujet,
+    1: setSujet
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: email,
+    1: setEmail
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: message,
+    1: setMessage
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: disable,
+    1: setdisable
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true); // useEffect(() => {
+  //   if (userName) {
+  //     setdisable(false)
+  //     console.log("not empty")
+  //   } else {
+  //     console.log("empty")
+  //   }
+  // }, [])
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "formulaire__contain formulaire__master"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "formulaire__text"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Contacte-moi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      textAlign: "center"
+    }
+  }, "Brise le plafond de verre et Lance-toi dans l\u2019aventure et donne un nouvel \xE9lan \xE0 ton entreprise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Envie de me pr\xE9senter un projet, ou tout simplement dire bonjour ?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
+    className: "form__main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "/success",
+    name: "PortfolioContact",
+    method: "POST",
+    "data-netlify": "true",
+    "data-netlify-honeypot": "bot field",
+    className: "formulaire__contain contain__form__respon",
+    onSubmit: "submit"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blockone"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "pr\xE9nom"
+  }, "Pr\xE9nom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Indique ton pr\xE9nom",
+    type: "text",
+    name: "pr\xE9nom",
+    onChange: e => setUserName(e.target.value)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__input"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "sujet"
+  }, "Sujet"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Que puis-je faire pour toi ? ",
+    type: "text",
+    name: "sujet",
+    onChange: e => setSujet(e.target.value)
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blocktwo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "email"
+  }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    placeholder: "Sur quel adresse mail dois-je te r\xE9pondre ? ",
+    type: "mail",
+    name: "email",
+    onChange: e => setEmail(e.target.value)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "form-name",
+    value: "PortfolioContact"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "bot-field"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__blockthree"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "message"
+  }, "Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    name: "",
+    id: "",
+    cols: "60",
+    rows: "10",
+    placeholder: "Entre ton message ",
+    onChange: e => setMessage(e.target.value)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form__checkbox"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "checkbox",
+    name: "",
+    id: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "J'accepte la politique de confidentialit\xE9.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    className: "form__btn",
+    disabled: !userName && !sujet
+  }, "Envoyer"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Formulaire);
 
 /***/ }),
 
@@ -40350,7 +40479,7 @@ const Mission = () => {
     className: "mission__icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fc__WEBPACK_IMPORTED_MODULE_2__["FcMultipleDevices"], {
     size: "50"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Full Remote / Pr\xE9sentiel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Organis\xE9 \xE0 distance, on communique et on collabore ensemble. Pout tous nos projets, on utilise les m\xE9thodes agiles")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Full Remote / Pr\xE9sentiel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Organis\xE9 \xE0 distance, on communique et on collabore ensemble. Pour tous nos projets, on utilise les m\xE9thodes agiles.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mission__text textv2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mission__icon"
@@ -40488,11 +40617,11 @@ const TextMe = () => {
     className: "text__contain"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Je travail avec des startups et differentes compagnies pour d\xE9velopper"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     style: {
       color: "#3ae374"
     }
-  }, "efficacement, rapidement, et visuellement leur site web.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Cr\xE9ation de site web pour particulier et professionnel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "J\u2019accompagne des entrepreneurs et entreprises de toutes tailles dans leur transformation digitale en cr\xE9ant des sites web \xE0 leur image.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text__picture"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text__description"
@@ -40500,9 +40629,9 @@ const TextMe = () => {
     className: "textdescription__para"
   }, "Apr\xE8s diff\xE9rentes exp\xE9riences professionnelles, j'ai d\xE9cid\xE9 de revenir \xE0 mon amour de toujours: le d\xE9veloppement web. Sociable, dynamique, curieux et appliqu\xE9, j'ai pu acqu\xE9rir ces derni\xE8res ann\xE9es de nombreuses connaissances que je souhaite aujourd\u2019hui mettre \xE0 contribution."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "textdescription__para"
-  }, "Mon approche est ax\xE9e sur une collaboration sur le long terme. Mon but \xE9tant de vous accompagner dans votre projet d\u2019entreprise et d\u2019\xEAtre un vrai partenaire. Les services que je propose vont de la cr\xE9ation de site vitrine, e-commerce ou d\u2019un blog, \xE0 la cr\xE9ation d\u2019une identit\xE9 visuelle pour votre entreprise ou encore au suivi de votre site apr\xE8s la finalisation du projet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Mon approche est ax\xE9e sur une collaboration sur le long terme. Mon but \xE9tant de vous accompagner dans votre projet d\u2019entreprise et d\u2019\xEAtre un vrai partenaire. Les services que je propose vont de la cr\xE9ation de site vitrine, E-Commerce ou d\u2019un blog, \xE0 la cr\xE9ation d\u2019une identit\xE9 visuelle pour votre entreprise ou encore au suivi de votre site apr\xE8s la finalisation du projet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "textdescription__para"
-  }, "Ce qui est primordial pour moi, c\u2019est de faire un site \xE0 votre image, dans votre budget mais surtout un site cr\xE9\xE9 avec les derni\xE8res innovations en mati\xE8re de d\xE9veloppement web pour que celui-ci dure dans le temps."))));
+  }, "Ce qui est primordial pour moi, c\u2019est de faire un site qui \xE0 votre image, dans votre budget mais surtout un site cr\xE9\xE9 avec les derni\xE8res innovations en mati\xE8re de d\xE9veloppement web pour que celui-ci dure dans le temps."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TextMe);
@@ -40541,7 +40670,7 @@ const TextNeedMe = () => {
     className: "text__needme"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "text__needmeleft"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Que pourrions-nous faire ensemble ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Besoin d'int\xE9grer un d\xE9veloppeur ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Je d\xE9veloppe des projets web, quelles que soient leurs dimensions, de la landing page \xE0 l\u2019application web en passant par le SaaS, pour des petites et moyennes entreprises. J\u2019ai une aspiration certaine pour les projets entrepreneuriaux innovants, et les m\xE9thodes agiles."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Comment pouvons-nous collaborer ensemble ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Besoin d\u2019un d\xE9veloppeur ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "De la landing page \xE0 l\u2019application web en passant par le SaaS, je cr\xE9e des projets web pour des entrepreneurs et entreprises de toutes tailles. D\xE9couvrir vos projets passionnant et innovant c\u2019est ce qui m\u2019inspire au quotidien."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "text__needmelog"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "text__needmespeci"
@@ -40597,6 +40726,17 @@ const TextNeedMe = () => {
 /*!*****************************************!*\
   !*** ./src/components/findmetomalt.css ***!
   \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/formulaire.css":
+/*!***************************************!*\
+  !*** ./src/components/formulaire.css ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -40697,6 +40837,31 @@ __webpack_require__.r(__webpack_exports__);
 const NotFoundPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404: Not Found"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You just hit a route that doesn't exist... the sadness."));
 
 /* harmony default export */ __webpack_exports__["default"] = (NotFoundPage);
+
+/***/ }),
+
+/***/ "./src/pages/contact.js":
+/*!******************************!*\
+  !*** ./src/pages/contact.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Formulaire__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Formulaire */ "./src/components/Formulaire.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+
+
+
+
+const contact = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Formulaire__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (contact);
 
 /***/ }),
 

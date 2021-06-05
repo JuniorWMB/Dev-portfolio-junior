@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useEffect } from "react"
 import "./formulaire.css"
 
 const Formulaire = () => {
@@ -6,13 +7,7 @@ const Formulaire = () => {
   const [sujet, setSujet] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-  const [disable, setdisable] = useState(false)
-
-  const buttondisable = () => {
-    if (userName && sujet && email && message === true) {
-      setdisable(true)
-    }
-  }
+  const [check, setCheck] = useState(false)
 
   return (
     <div className="formulaire__contain formulaire__master">
@@ -72,7 +67,7 @@ const Formulaire = () => {
           <div className="form__blockthree">
             <label htmlFor="message">Message</label>
             <textarea
-              name=""
+              name="message"
               id=""
               cols="60"
               rows="10"
@@ -82,10 +77,19 @@ const Formulaire = () => {
             ></textarea>
           </div>
           <div className="form__checkbox">
-            <input type="checkbox" name="" id="" />
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              onChange={e => setCheck(e.target.value)}
+            />
             <p>J'accepte la politique de confidentialité.</p>
           </div>
-          <button type="submit" className="form__btn" disabled={disable}>
+          <button
+            type="submit"
+            className="form__btn"
+            disabled={!userName || !sujet || !email || !message || !check}
+          >
             Envoyer
           </button>
         </form>
